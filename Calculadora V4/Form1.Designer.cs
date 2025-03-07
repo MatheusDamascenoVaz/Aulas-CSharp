@@ -28,244 +28,257 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonClean = new Button();
-            buttonDiv = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            buttonMult = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            buttonSub = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            buttonSoma = new Button();
-            button0 = new Button();
-            buttonVirg = new Button();
-            buttonIgual = new Button();
+            ButtonClear = new Button();
+            ButtonDiv = new Button();
+            Button7 = new Button();
+            Button8 = new Button();
+            Button9 = new Button();
+            ButtonMult = new Button();
+            Button4 = new Button();
+            Button5 = new Button();
+            Button6 = new Button();
+            ButtonSub = new Button();
+            Button1 = new Button();
+            Button2 = new Button();
+            Button3 = new Button();
+            ButtonSoma = new Button();
+            Button0 = new Button();
+            ButtonVirg = new Button();
+            ButtonIgual = new Button();
             textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // buttonClean
+            // ButtonClear
             // 
-            buttonClean.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonClean.ForeColor = Color.Red;
-            buttonClean.Location = new Point(12, 43);
-            buttonClean.Name = "buttonClean";
-            buttonClean.Size = new Size(162, 50);
-            buttonClean.TabIndex = 0;
-            buttonClean.Text = "C";
-            buttonClean.UseVisualStyleBackColor = true;
+            ButtonClear.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonClear.ForeColor = Color.Red;
+            ButtonClear.Location = new Point(12, 43);
+            ButtonClear.Name = "ButtonClear";
+            ButtonClear.Size = new Size(162, 50);
+            ButtonClear.TabIndex = 0;
+            ButtonClear.Text = "C";
+            ButtonClear.UseVisualStyleBackColor = true;
+            ButtonClear.Click += ButtonClear_Click;
             // 
-            // buttonDiv
+            // ButtonDiv
             // 
-            buttonDiv.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonDiv.Location = new Point(180, 43);
-            buttonDiv.Name = "buttonDiv";
-            buttonDiv.Size = new Size(50, 50);
-            buttonDiv.TabIndex = 3;
-            buttonDiv.Text = "/";
-            buttonDiv.UseVisualStyleBackColor = true;
-            buttonDiv.Click += buttonDiv_Click;
+            ButtonDiv.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonDiv.Location = new Point(180, 43);
+            ButtonDiv.Name = "ButtonDiv";
+            ButtonDiv.Size = new Size(50, 50);
+            ButtonDiv.TabIndex = 3;
+            ButtonDiv.Text = "/";
+            ButtonDiv.UseVisualStyleBackColor = true;
+            ButtonDiv.Click += ButtonDiv_Click;
             // 
-            // button7
+            // Button7
             // 
-            button7.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button7.Location = new Point(11, 99);
-            button7.Name = "button7";
-            button7.Size = new Size(50, 50);
-            button7.TabIndex = 4;
-            button7.Text = "7";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            Button7.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button7.Location = new Point(11, 99);
+            Button7.Name = "Button7";
+            Button7.Size = new Size(50, 50);
+            Button7.TabIndex = 4;
+            Button7.Text = "7";
+            Button7.UseVisualStyleBackColor = true;
+            Button7.Click += Button7_Click;
             // 
-            // button8
+            // Button8
             // 
-            button8.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button8.Location = new Point(69, 99);
-            button8.Name = "button8";
-            button8.Size = new Size(50, 50);
-            button8.TabIndex = 5;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            Button8.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button8.Location = new Point(69, 99);
+            Button8.Name = "Button8";
+            Button8.Size = new Size(50, 50);
+            Button8.TabIndex = 5;
+            Button8.Text = "8";
+            Button8.UseVisualStyleBackColor = true;
+            Button8.Click += Button8_Click;
             // 
-            // button9
+            // Button9
             // 
-            button9.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button9.Location = new Point(125, 99);
-            button9.Name = "button9";
-            button9.Size = new Size(50, 50);
-            button9.TabIndex = 6;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            Button9.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button9.Location = new Point(125, 99);
+            Button9.Name = "Button9";
+            Button9.Size = new Size(50, 50);
+            Button9.TabIndex = 6;
+            Button9.Text = "9";
+            Button9.UseVisualStyleBackColor = true;
+            Button9.Click += Button9_Click;
             // 
-            // buttonMult
+            // ButtonMult
             // 
-            buttonMult.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonMult.Location = new Point(181, 99);
-            buttonMult.Name = "buttonMult";
-            buttonMult.Size = new Size(50, 50);
-            buttonMult.TabIndex = 7;
-            buttonMult.Text = "X";
-            buttonMult.UseVisualStyleBackColor = true;
-            buttonMult.Click += buttonMult_Click;
+            ButtonMult.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonMult.Location = new Point(181, 99);
+            ButtonMult.Name = "ButtonMult";
+            ButtonMult.Size = new Size(50, 50);
+            ButtonMult.TabIndex = 7;
+            ButtonMult.Text = "X";
+            ButtonMult.UseVisualStyleBackColor = true;
+            ButtonMult.Click += ButtonMult_Click;
             // 
-            // button4
+            // Button4
             // 
-            button4.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button4.Location = new Point(11, 155);
-            button4.Name = "button4";
-            button4.Size = new Size(50, 50);
-            button4.TabIndex = 8;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            Button4.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button4.Location = new Point(11, 155);
+            Button4.Name = "Button4";
+            Button4.Size = new Size(50, 50);
+            Button4.TabIndex = 8;
+            Button4.Text = "4";
+            Button4.UseVisualStyleBackColor = true;
+            Button4.Click += Button4_Click;
             // 
-            // button5
+            // Button5
             // 
-            button5.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button5.Location = new Point(69, 155);
-            button5.Name = "button5";
-            button5.Size = new Size(50, 50);
-            button5.TabIndex = 9;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            Button5.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button5.Location = new Point(69, 155);
+            Button5.Name = "Button5";
+            Button5.Size = new Size(50, 50);
+            Button5.TabIndex = 9;
+            Button5.Text = "5";
+            Button5.UseVisualStyleBackColor = true;
+            Button5.Click += Button5_Click;
             // 
-            // button6
+            // Button6
             // 
-            button6.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button6.Location = new Point(125, 155);
-            button6.Name = "button6";
-            button6.Size = new Size(50, 50);
-            button6.TabIndex = 10;
-            button6.Text = "6";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            Button6.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button6.Location = new Point(125, 155);
+            Button6.Name = "Button6";
+            Button6.Size = new Size(50, 50);
+            Button6.TabIndex = 10;
+            Button6.Text = "6";
+            Button6.UseVisualStyleBackColor = true;
+            Button6.Click += Button6_Click;
             // 
-            // buttonSub
+            // ButtonSub
             // 
-            buttonSub.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonSub.Location = new Point(181, 155);
-            buttonSub.Name = "buttonSub";
-            buttonSub.Size = new Size(50, 50);
-            buttonSub.TabIndex = 11;
-            buttonSub.Text = "-";
-            buttonSub.UseVisualStyleBackColor = true;
-            buttonSub.Click += Button12_Click;
+            ButtonSub.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonSub.Location = new Point(181, 155);
+            ButtonSub.Name = "ButtonSub";
+            ButtonSub.Size = new Size(50, 50);
+            ButtonSub.TabIndex = 11;
+            ButtonSub.Text = "-";
+            ButtonSub.UseVisualStyleBackColor = true;
+            ButtonSub.Click += ButtonSub_Click;
             // 
-            // button1
+            // Button1
             // 
-            button1.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button1.Location = new Point(11, 211);
-            button1.Name = "button1";
-            button1.Size = new Size(50, 50);
-            button1.TabIndex = 12;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Button1.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button1.Location = new Point(11, 211);
+            Button1.Name = "Button1";
+            Button1.Size = new Size(50, 50);
+            Button1.TabIndex = 12;
+            Button1.Text = "1";
+            Button1.UseVisualStyleBackColor = true;
+            Button1.Click += Button1_Click;
             // 
-            // button2
+            // Button2
             // 
-            button2.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button2.Location = new Point(69, 211);
-            button2.Name = "button2";
-            button2.Size = new Size(50, 50);
-            button2.TabIndex = 13;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            Button2.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button2.Location = new Point(69, 211);
+            Button2.Name = "Button2";
+            Button2.Size = new Size(50, 50);
+            Button2.TabIndex = 13;
+            Button2.Text = "2";
+            Button2.UseVisualStyleBackColor = true;
+            Button2.Click += Button2_Click;
             // 
-            // button3
+            // Button3
             // 
-            button3.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button3.Location = new Point(124, 211);
-            button3.Name = "button3";
-            button3.Size = new Size(50, 50);
-            button3.TabIndex = 14;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            Button3.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button3.Location = new Point(124, 211);
+            Button3.Name = "Button3";
+            Button3.Size = new Size(50, 50);
+            Button3.TabIndex = 14;
+            Button3.Text = "3";
+            Button3.UseVisualStyleBackColor = true;
+            Button3.Click += Button3_Click;
             // 
-            // buttonSoma
+            // ButtonSoma
             // 
-            buttonSoma.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonSoma.Location = new Point(180, 211);
-            buttonSoma.Name = "buttonSoma";
-            buttonSoma.Size = new Size(50, 50);
-            buttonSoma.TabIndex = 15;
-            buttonSoma.Text = "+";
-            buttonSoma.UseVisualStyleBackColor = true;
-            buttonSoma.Click += Button12_Click;
+            ButtonSoma.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonSoma.Location = new Point(180, 211);
+            ButtonSoma.Name = "ButtonSoma";
+            ButtonSoma.Size = new Size(50, 50);
+            ButtonSoma.TabIndex = 15;
+            ButtonSoma.Text = "+";
+            ButtonSoma.UseVisualStyleBackColor = true;
+            ButtonSoma.Click += ButtonSoma_Click;
             // 
-            // button0
+            // Button0
             // 
-            button0.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button0.Location = new Point(12, 268);
-            button0.Name = "button0";
-            button0.Size = new Size(107, 50);
-            button0.TabIndex = 17;
-            button0.Text = "0";
-            button0.UseVisualStyleBackColor = true;
-            button0.Click += button0_Click;
+            Button0.Font = new Font("Arial", 12F, FontStyle.Bold);
+            Button0.Location = new Point(12, 268);
+            Button0.Name = "Button0";
+            Button0.Size = new Size(107, 50);
+            Button0.TabIndex = 17;
+            Button0.Text = "0";
+            Button0.UseVisualStyleBackColor = true;
+            Button0.Click += Button0_Click;
             // 
-            // buttonVirg
+            // ButtonVirg
             // 
-            buttonVirg.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonVirg.Location = new Point(124, 268);
-            buttonVirg.Name = "buttonVirg";
-            buttonVirg.Size = new Size(50, 50);
-            buttonVirg.TabIndex = 18;
-            buttonVirg.Text = ",";
-            buttonVirg.UseVisualStyleBackColor = true;
-            buttonVirg.Click += ButtonIgual_Click;
+            ButtonVirg.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonVirg.Location = new Point(124, 268);
+            ButtonVirg.Name = "ButtonVirg";
+            ButtonVirg.Size = new Size(50, 50);
+            ButtonVirg.TabIndex = 18;
+            ButtonVirg.Text = ",";
+            ButtonVirg.UseVisualStyleBackColor = true;
+            ButtonVirg.Click += ButtonVirg_Click;
             // 
-            // buttonIgual
+            // ButtonIgual
             // 
-            buttonIgual.BackColor = Color.LightGreen;
-            buttonIgual.Font = new Font("Arial", 12F, FontStyle.Bold);
-            buttonIgual.Location = new Point(181, 268);
-            buttonIgual.Name = "buttonIgual";
-            buttonIgual.Size = new Size(50, 50);
-            buttonIgual.TabIndex = 19;
-            buttonIgual.Text = "=";
-            buttonIgual.UseVisualStyleBackColor = false;
-            buttonIgual.Click += ButtonIgual_Click;
+            ButtonIgual.BackColor = Color.LightGreen;
+            ButtonIgual.Font = new Font("Arial", 12F, FontStyle.Bold);
+            ButtonIgual.Location = new Point(181, 268);
+            ButtonIgual.Name = "ButtonIgual";
+            ButtonIgual.Size = new Size(50, 50);
+            ButtonIgual.TabIndex = 19;
+            ButtonIgual.Text = "=";
+            ButtonIgual.UseVisualStyleBackColor = false;
+            ButtonIgual.Click += ButtonIgual_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(12, 14);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(219, 23);
             textBox1.TabIndex = 20;
+            textBox1.TextAlign = HorizontalAlignment.Right;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(16, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 21;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(243, 330);
+            Controls.Add(label1);
             Controls.Add(textBox1);
-            Controls.Add(buttonIgual);
-            Controls.Add(buttonVirg);
-            Controls.Add(button0);
-            Controls.Add(buttonSoma);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(buttonSub);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(buttonMult);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(buttonDiv);
-            Controls.Add(buttonClean);
+            Controls.Add(ButtonIgual);
+            Controls.Add(ButtonVirg);
+            Controls.Add(Button0);
+            Controls.Add(ButtonSoma);
+            Controls.Add(Button3);
+            Controls.Add(Button2);
+            Controls.Add(Button1);
+            Controls.Add(ButtonSub);
+            Controls.Add(Button6);
+            Controls.Add(Button5);
+            Controls.Add(Button4);
+            Controls.Add(ButtonMult);
+            Controls.Add(Button9);
+            Controls.Add(Button8);
+            Controls.Add(Button7);
+            Controls.Add(ButtonDiv);
+            Controls.Add(ButtonClear);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -274,23 +287,24 @@
 
         #endregion
 
-        private Button buttonClean;
-        private Button buttonDiv;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button buttonMult;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button buttonSub;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button buttonSoma;
-        private Button button0;
-        private Button buttonVirg;
-        private Button buttonIgual;
+        private Button ButtonClear;
+        private Button ButtonDiv;
+        private Button Button7;
+        private Button Button8;
+        private Button Button9;
+        private Button ButtonMult;
+        private Button Button4;
+        private Button Button5;
+        private Button Button6;
+        private Button ButtonSub;
+        private Button Button1;
+        private Button Button2;
+        private Button Button3;
+        private Button ButtonSoma;
+        private Button Button0;
+        private Button ButtonVirg;
+        private Button ButtonIgual;
         private TextBox textBox1;
+        private Label label1;
     }
 }
