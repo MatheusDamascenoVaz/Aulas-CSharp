@@ -9,3 +9,4 @@ Console.WriteLine(produto1.GetDetailProduct());
 Console.WriteLine(produto2.GetDetailProduct());
 Console.WriteLine(produto3.GetDetailProduct());
 
+Retangulo retangulo = new Retangulo(50, 20);
