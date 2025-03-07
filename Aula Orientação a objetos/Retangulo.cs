@@ -17,12 +17,12 @@ namespace Aula_Orientação_a_objetos
             Largura = largura;
             Altura = altura;
         }
-        public double Area(double largura, double altura)
+        public double Area()
         {
             return Largura * Altura;
 
         }
-        public double Perimetro(double largura, double altura)
+        public double Perimetro()
         {
             return (Altura + Largura) * 2;
         }
