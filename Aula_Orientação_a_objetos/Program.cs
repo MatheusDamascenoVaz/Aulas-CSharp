@@ -25,6 +25,9 @@ do
 
     Console.WriteLine("Digite a transação desejada \n1 -> Depósito \n2 -> Saque \n3 -> Consultar saldo");
     operacao = double.Parse(Console.ReadLine());
+    if (operacao == 3) { Console.WriteLine(conta_Corrente1.ExibeSaldo());
+        break;
+    }
 }
 while (operacao < 1 || operacao > 3);
 
