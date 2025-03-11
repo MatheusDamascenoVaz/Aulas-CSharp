@@ -3,24 +3,40 @@ using CadastroAlunos;
 using System;
 using System.Data;
 
-List alunos = new List();
-string repeticao
-
-    do
+class Program
+{
+    static void Main(string[] args)
     {
-Console.WriteLine("Digite o nome do aluno")
-    string nomeAluno = Console.ReadLine();
 
-Console.WriteLine("Digite a idade do aluno")
-    string idadeAluno = Console.ReadLine();
-Console.WriteLine("Digite o curso do aluno")
-    string cursoAluno = Console.ReadLine();
+        List<Alunos>listaAlunos = new List<Alunos>();
+string repeticao;
 
-Console.WriteLine("Deseja adicionar mais alunos? (s/n)");
-repeticao = Console.ReadLine().ToLower();
+do
+{
+    Console.WriteLine("Digite o nome do aluno:");
+    string nome = Console.ReadLine();
+
+    Console.WriteLine("Digite a idade do aluno:");
+    int idade = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o curso do aluno:");
+    string curso = Console.ReadLine();
+
+    Alunos aluno = new Alunos(nome, idade, curso);
+    listaAlunos.Add(aluno);
+
+    Console.WriteLine("Deseja adicionar mais alunos? (s/n)");
+    repeticao = Console.ReadLine().ToLower();
+} while (repeticao == "s");
+
+Console.WriteLine("\nAlunos cadastrados:");
+foreach (var aluno in listaAlunos)
+{
+    Console.WriteLine($"Nome: {aluno.Nome}\nIdade: {aluno.Idade}\nCurso: {aluno.Curso}");
+    Console.WriteLine();
 }
-while (repeticao == "s") ;
-Console.WriteLine("\nAlunos cadastrados");
+    }
+}
 
     
 
