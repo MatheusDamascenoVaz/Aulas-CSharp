@@ -1,26 +1,28 @@
 ﻿
 using CadastroAlunos;
+using System;
 using System.Data;
 
-int continuar;
-string alunos;
-Console.WriteLine("Insira o nome do aluno");
-alunos = Console.ReadLine();
+List alunos = new List();
+string repeticao
 
-    Console.WriteLine("Deseja adicionar um novo aluno? \n1 -> SIM \n2 -> NÃO");
-    continuar = Convert.ToInt32(Console.ReadLine());
-// do
-//{
-//    Console.WriteLine("Digite o nome do novo aluno");
-//    alunos = Console.ReadLine();
+    do
+    {
+Console.WriteLine("Digite o nome do aluno")
+    string nomeAluno = Console.ReadLine();
 
+Console.WriteLine("Digite a idade do aluno")
+    string idadeAluno = Console.ReadLine();
+Console.WriteLine("Digite o curso do aluno")
+    string cursoAluno = Console.ReadLine();
 
-//    Console.Clear();
-//}
+Console.WriteLine("Deseja adicionar mais alunos? (s/n)");
+repeticao = Console.ReadLine().ToLower();
+}
+while (repeticao == "s") ;
+Console.WriteLine("\nAlunos cadastrados");
 
-//while (continuar == 1);
-//Console.WriteLine("FIM");
+    
 
-//CadastroAlunos cadastroAlunos
 
 
