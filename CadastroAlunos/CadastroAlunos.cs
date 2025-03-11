@@ -9,22 +9,26 @@ namespace CadastroAlunos
     internal class CadastroAlunos
     {
         public string Nome;
-        public int Matrícula;
-        public int AnoLetivo;
+        public int Idade;
+        public string Curso;
        
 
-        public CadastroAlunos(string nome, int matrícula, int anoLetivo, string email, string telefoneDeEmergencia)
+        public CadastroAlunos(string nome, int idade, string curso)
         {
             Nome = nome;
-            Matrícula = matrícula;
-            AnoLetivo = anoLetivo;
+            Idade = idade;
+            Curso = curso;
             
         }
 
         public string GetDetailedInfo()
         {
-            return $"Aluno: {Nome} \n Matrícula: {Matrícula} \nAno letivo: {AnoLetivo} \n";
+            return $"Aluno: {Nome} \n Idade: {Idade} \nCurso: {Curso} \n";
         }
-            
+        public string AdicionaAluno()
+        {
+            return "Insira o nome do Aluno";
+            Nome = Console.ReadLine();
+        }
     }
 }
