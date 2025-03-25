@@ -6,15 +6,16 @@ namespace Calculadora_V4
         public decimal Valor;
 
         private Operacao OperacaoSelecionada;
-        private enum Operacao
-        {
-            Adicao,
-            Subtracao,
-            Multiplicacao,
-            Divisao
-
-        }
-        public Form1()
+        private enum Operacao                                                                      
+        {                                                                               //\\  
+            Adicao,                                                                    //  \\
+            Subtracao,                                                                //    \\     
+            Multiplicacao,                                                           //      \\
+            Divisao                                                                 //        \\
+                                                                                   //          \\         
+        }                                                                         //            \\    
+                                                                                 /////////\\\\\\\\\              
+        public Form1()                                                          
         {
             InitializeComponent();
         }
@@ -78,7 +79,7 @@ namespace Calculadora_V4
             textBox1.Text = "";
             label1.Text = "/";
         }
-
+        
         private void ButtonMult_Click(object sender, EventArgs e)
         {
             OperacaoSelecionada = Operacao.Multiplicacao;
