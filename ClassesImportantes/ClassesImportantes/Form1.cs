@@ -59,5 +59,26 @@ namespace ClassesImportantes
 
 
         }
+        // ///////////////////////////////////////////////////////////////////  CLASSE RELACIONADA A CALCULOS COM TEMPO
+        private void btnTimeSpam_Click(object sender, EventArgs e)
+        {
+            //TimeSpan time1 = new TimeSpan(3,30,0);
+            TimeSpan time2 = TimeSpan.FromHours(2.7);
+            TimeSpan time3 = TimeSpan.FromMinutes(693);
+            labelResult.Text = time2.ToString();
+            labelResult2.Text = time3.ToString();
+
+            DateTime inicio = DateTime.Now;
+            DateTime fim = inicio.AddHours(3);
+
+            TimeSpan time1 = new TimeSpan(3, 30, 0);
+            TimeSpan time4 = new TimeSpan(2, 25, 32);
+
+            TimeSpan time5 = time1.Subtract(time4);
+
+            
+            labelResult3.Text = time5.ToString();
+
+        }
     }
 }

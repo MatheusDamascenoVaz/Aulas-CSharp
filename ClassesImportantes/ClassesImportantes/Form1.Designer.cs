@@ -34,6 +34,7 @@
             this.btnDateTime = new System.Windows.Forms.Button();
             this.labelResult2 = new System.Windows.Forms.Label();
             this.labelResult3 = new System.Windows.Forms.Label();
+            this.btnTimeSpam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -94,11 +95,22 @@
             this.labelResult3.Size = new System.Drawing.Size(0, 38);
             this.labelResult3.TabIndex = 5;
             // 
+            // btnTimeSpam
+            // 
+            this.btnTimeSpam.Location = new System.Drawing.Point(458, 361);
+            this.btnTimeSpam.Name = "btnTimeSpam";
+            this.btnTimeSpam.Size = new System.Drawing.Size(112, 63);
+            this.btnTimeSpam.TabIndex = 6;
+            this.btnTimeSpam.Text = "Date Time";
+            this.btnTimeSpam.UseVisualStyleBackColor = true;
+            this.btnTimeSpam.Click += new System.EventHandler(this.btnTimeSpam_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTimeSpam);
             this.Controls.Add(this.labelResult3);
             this.Controls.Add(this.labelResult2);
             this.Controls.Add(this.btnDateTime);
@@ -120,6 +132,7 @@
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Label labelResult2;
         private System.Windows.Forms.Label labelResult3;
+        private System.Windows.Forms.Button btnTimeSpam;
     }
 }
 
