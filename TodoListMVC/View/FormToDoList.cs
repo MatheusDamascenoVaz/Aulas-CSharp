@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TodoListMVC.Controller;
+using TodoListMVC.Model;
 
 namespace TodoListMVC.View
 {
@@ -16,7 +17,7 @@ namespace TodoListMVC.View
       
 private TodoController _controller;
 
-        public FormTodoList()
+        public FormToDoList()
         {
             InitializeComponent();
             _controller = new TodoController();
@@ -25,7 +26,7 @@ private TodoController _controller;
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtTarefa.Text))
+           if (!string.IsNullOrEmpty(txtTarefa.Text))
             {
                 _controller.AdicionarTarefa(txtTarefa.Text);
                 txtTarefa.Clear();
@@ -35,9 +36,24 @@ private TodoController _controller;
 
         private void AtualizarLista()
         {
-            listBoxTarefas.DataSource = null;
-            listBoxTarefas.DataSource = _controller.ObterTarefas();
-            listBoxTarefas.DisplayMember = "Descricao";
+            listBoxTarefas.Items.Clear();
+            foreach (Tarefa tarefa in _controller.ObterTarefas()) 
+            {
+                listBoxTarefas.Items.Add(tarefa.Descricao);
+
+            }
+        }
+        
+        
+
+        private void FormToDoList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxTarefas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -13,7 +13,9 @@ namespace TodoListMVC.Model
 
         public void AdicionarTarefa(string descricao)
         {
-        _tarefas.Add(new Tarefa { Id = _proximoId++, Descricao = descricao });
+            Tarefa novaTarefa = new Tarefa(_proximoId, descricao);
+            _tarefas.Add(novaTarefa);
+            _proximoId++;
         }
         public List<Tarefa> ObterTodas()
         {
@@ -21,9 +23,15 @@ namespace TodoListMVC.Model
         }
         public void MarcarCoomoConcluida(int id)
         {
-            var tarefa = _tarefas.FirstOrDefault(t => t.Id == id);
-            if (tarefa != null)
-                tarefa.Concluida = true;
+            foreach (Tarefa tarefa in _tarefas)
+            {
+                if (tarefa.Id == id)
+                {
+                    tarefa.Concluida = true;
+                    break;
+                }
+
+            }
         }
     }
 }

@@ -13,16 +13,19 @@ namespace TodoListMVC.Controller
 
         public void AdicionarTarefa(string descricao)
         {
-        _tarefaService.AdicionarTarefa (descricao);
+            _tarefaService.AdicionarTarefa(descricao);
         }
-    public List<Tarefa> ObterTarefas()
+
+        public List<Tarefa> ObterTarefas()
         {
             return _tarefaService.ObterTodas();
-
         }
-        public void ConcluirTarefa(int id) 
+
+        public void ConcluirTarefa(int id)
         {
-            _tarefaService.MarcarComoConcluida(id);
+            _tarefaService.MarcarCoomoConcluida(id);
         }
     }
+
+
 }

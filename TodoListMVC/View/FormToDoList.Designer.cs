@@ -41,6 +41,7 @@
             this.btnAdicionar.TabIndex = 0;
             this.btnAdicionar.Text = "button1";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // txtTarefa
             // 
@@ -56,6 +57,7 @@
             this.listBoxTarefas.Name = "listBoxTarefas";
             this.listBoxTarefas.Size = new System.Drawing.Size(120, 95);
             this.listBoxTarefas.TabIndex = 2;
+            this.listBoxTarefas.SelectedIndexChanged += new System.EventHandler(this.listBoxTarefas_SelectedIndexChanged);
             // 
             // FormToDoList
             // 
@@ -67,7 +69,7 @@
             this.Controls.Add(this.btnAdicionar);
             this.Name = "FormToDoList";
             this.Text = "Form1";
-           
+            this.Load += new System.EventHandler(this.FormToDoList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

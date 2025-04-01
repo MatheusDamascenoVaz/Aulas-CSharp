@@ -12,5 +12,12 @@ namespace TodoListMVC.Model
         public string Descricao { get; set; }
         public bool Concluida { get; set; }
 
+
+        public Tarefa(int id, string descricao)
+        {
+            this.Id = id;
+            this.Descricao = descricao;
+            this.Concluida = false;
+        }
     }
 }
