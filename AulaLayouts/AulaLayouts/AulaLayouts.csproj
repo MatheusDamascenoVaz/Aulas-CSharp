@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Screen\Home\Paineis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Home\Paineis.Designer.cs">
+      <DependentUpon>Paineis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\Home\Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Home\Tables.Designer.cs">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\SplashScreen\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     </Compile>
     <EmbeddedResource Include="Screen\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Home\Paineis.resx">
+      <DependentUpon>Paineis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Home\Tables.resx">
+      <DependentUpon>Tables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\SplashScreen\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>

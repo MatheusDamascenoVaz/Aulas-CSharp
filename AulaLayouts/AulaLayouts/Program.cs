@@ -19,8 +19,10 @@ namespace AulaLayouts
             Application.SetCompatibleTextRenderingDefault(false);
             Home home = new Home();
             SplashScreen splashScreen = new SplashScreen();
+            Paineis paineis = new Paineis();
+            Tables tables = new Tables();
 
-            Application.Run(splashScreen);
+            Application.Run(tables);
 
             if (splashScreen.IsDisposed)
             {
